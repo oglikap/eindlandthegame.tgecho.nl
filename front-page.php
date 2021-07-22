@@ -11,7 +11,7 @@
    </div>
   
   <?php } else { ?> 
-    <div id="demo" class="countdown" style="background-image: url(<?php echo get_template_directory_uri(); ?>/images/countdown.jpg);"></div>
+    <div id="demo" class="countdown"></div>
 
     <script>
     // Set the date we're counting down to
