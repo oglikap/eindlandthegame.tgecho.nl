@@ -6,8 +6,11 @@
   justify-content: center;
   align-items: center;
   background-color: #3c3b3c;
-  color: rgba(#fff, 0.85);
+  color: rgba(#fff, 0.7);
   letter-spacing: 2px;
-
+  position: relative;
   font-size: 5em;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
 }
