@@ -7,28 +7,28 @@
       <div class="score">
         <div class="score__container">
           <h3 class="score__title">Ranking Eindland The Game</h3>
-          <ul class="score__list">
-            <li>1. Piet Keizer 106</li>
-            <li>2. Wim Jansen 104</li>
-            <li>3. Ruud Gullit 105</li>
-            <li>4. Sjaak Troost 104</li>
-            <li>5. Marco van Basten 102</li>
-            <li>6. Wim Kieft 101</li>
-            <li>7. Sonny Silooy 98</li>
-            <li>8. Berry van Aerle 97</li>
-            <li>9. Frank Rijkaard 96</li>
-            <li>10. Dennis Bergkamp 95</li>
-            <li>11. Louis van Gaal 83</li>
-            <li>12. Aaron Winter 82</li>
-            <li>13. Kees Kist 76</li>
-            <li>14. Jan Wouterse 73</li>
-            <li>15. Frank de Boer 72</li>
-            <li>16. Ronald de Boer 72</li>
-            <li>17. Margeet Dolman 61</li>
-            <li>18. Piet Paaltjens 60</li>
-            <li>19. Andre Hazes 58</li>
-            <li>20. Anky van Grunsven 56</li>
-          </ul>
+          <ol class="score__list">
+            <li>Piet Keizer 106</li>
+            <li>Wim Jansen 104</li>
+            <li>Ruud Gullit 105</li>
+            <li>Sjaak Troost 104</li>
+            <li>Marco van Basten 102</li>
+            <li>Wim Kieft 101</li>
+            <li>Sonny Silooy 98</li>
+            <li>Berry van Aerle 97</li>
+            <li>Frank Rijkaard 96</li>
+            <li>Dennis Bergkamp 95</li>
+            <li>Louis van Gaal 83</li>
+            <li>Aaron Winter 82</li>
+            <li>Kees Kist 76</li>
+            <li>Jan Wouterse 73</li>
+            <li>Frank de Boer 72</li>
+            <li>Ronald de Boer 72</li>
+            <li>Margeet Dolman 61</li>
+            <li>Piet Paaltjens 60</li>
+            <li>Andre Hazes 58</li>
+            <li>Anky van Grunsven 56</li>
+          </ol>
         </div>
       </div>
 

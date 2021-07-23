@@ -1,3 +1,6 @@
+@import 'base/_variables';
 @import 'base/_mixins';
 
 @import 'modules/_countdown';
+@import 'modules/_front-page';
+@import 'modules/_score';

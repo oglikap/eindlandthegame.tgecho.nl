@@ -1,0 +1,30 @@
+.front-page {
+  padding-top: 2em;
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  &__start {
+    position: absolute;
+    font-family: $font-secondary;
+    font-size: 2.75em;
+    bottom: 3em;
+    right: 1.5em;
+    width: 2.75em;
+    height: 2.75em;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.4s;
+    transform: rotate(-5deg);
+
+    &:hover {
+      text-decoration: none;
+      transform: rotate(-7.5deg) scale(1.05);
+    }
+  }
+}
