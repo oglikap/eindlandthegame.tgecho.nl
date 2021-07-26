@@ -28,3 +28,64 @@
     }
   }
 }
+
+.home {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+
+  @mixin atMedium {
+    font-size: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @mixin atLarge {
+    font-size: 16px;
+  }
+
+  &__text {
+    padding: 2em 0;
+
+    @mixin atMedium {
+      width: 60%;
+      padding: 0;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    justify-content: space-between;
+    font-family: $font-secondary;
+    padding-right: 4em;
+  }
+
+  &__button {
+    font-size: 1.5em;
+    width: 7em;
+    height: 7em;
+    background-color: rgba(#222, 0.15);
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotate(-5deg);
+
+    a {
+      color: currentColor;
+      display: inline-block;
+      padding: 1.5em;
+      transition: transform 0.3s;
+
+      &:hover {
+        text-decoration: none;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
