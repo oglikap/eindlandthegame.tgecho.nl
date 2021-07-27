@@ -77,13 +77,13 @@
 
           <ul class="home__buttons">
             <li class="home__button">
-              <a href="">Het Ding Verstopt</a>
+              <a href="<?php echo esc_url(site_url('het-ding-verstopt')); ?>">Het Ding Verstopt</a>
             </li>
             <li class="home__button">
-              <a href="">Het Ding Dichtbij</a>
+              <a href="<?php echo esc_url(site_url('het-ding-dichtbij')); ?>">Het Ding Dichtbij</a>
             </li>
             <li class="home__button">
-              <a href="">Eindland Award</a>
+              <a href="<?php echo esc_url(site_url('eindland-award')); ?>">Eindland Award</a>
             </li>
           </ul>
         </div>
