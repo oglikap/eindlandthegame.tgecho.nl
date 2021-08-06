@@ -143,14 +143,26 @@
 
     @mixin atLarge {
       transform: rotate(-5deg) translate(0, -1em);
+
+      &:hover {
+        transform: scale(1.05) rotate(-5deg) translate(0, -1em);
+      }
     }
 
     @mixin atLarger {
       transform: rotate(-5deg) translate(1em, -1.5em);
+
+      &:hover {
+        transform: scale(1.05) rotate(-5deg) translate(1em, -1.5em);
+      }
     }
 
     @mixin atXlarge {
       transform: rotate(-5deg) translate(2em, -2em);
+
+      &:hover {
+        transform: scale(1.05) rotate(-5deg) translate(2em, -2em);
+      }
     }
   }
 }
