@@ -4,8 +4,27 @@
   
   <div class="front-page">
     <div class="uk-container">
-    <img src="<?php echo get_theme_file_uri('/images/countdown.jpg'); ?>"; alt="<?php echo bloginfo('title'); ?>">
-      <a class="front-page__start" href="<?php echo esc_url(site_url('start')); ?>">Start</a>
+      <div class="front-page__image">
+      <div class="front-page__logo">
+        <img src="<?php echo get_theme_file_uri('/images/eindland-logo.png'); ?>" alt="Eindland the game">
+        <div class="front-page__game">The<br><span>game</span></div>
+      </div>
+        <img src="<?php 
+        if(wp_is_mobile()) {
+          echo get_theme_file_uri('/images/kaart-zonder-tekst--small.jpg');
+         } else {
+          echo get_theme_file_uri('/images/kaart-zonder-tekst--large.jpg');
+         } ?>"; alt="<?php echo bloginfo('title'); ?>">
+          <div class="front-page__verras">
+            Verras ons met jouw blik op de werkelijkheid
+          </div>
+      </div>
+     
+      <div class="front-page__start">
+        <a class="front-page__button" href="<?php echo esc_url(site_url('start')); ?>">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/start-300.png" alt="Start">
+        </a>
+      </div>
     </div>  
    </div>
   
