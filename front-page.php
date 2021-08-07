@@ -6,8 +6,7 @@
     <div class="uk-container">
       <div class="front-page__image">
         <?php logo(); ?>
-        <img src="<?php 
-        if(wp_is_mobile()) {
+        <img src="<?php if(wp_is_mobile()) {
           echo get_theme_file_uri('/images/kaart-zonder-tekst--small.jpg');
          } else {
           echo get_theme_file_uri('/images/kaart-zonder-tekst--large.jpg');
@@ -15,17 +14,6 @@
         <div class="front-page__verras">
           Verras ons met jouw blik op de werkelijkheid
         </div>
-
-        <style>
-          #stip {
-            <?php if(get_field('top')) { ?>
-              top: <?php the_field('top'); ?>%;
-            <?php } 
-            if(get_field('left')) { ?>
-             left: <?php the_field('left'); ?>%;
-             <?php } ?>
-          }
-        </style>
 
         <div class="front-page__stip" id="stip">
            <img src="<?php echo get_theme_file_uri('/images/stip-80.png'); ?>" />
