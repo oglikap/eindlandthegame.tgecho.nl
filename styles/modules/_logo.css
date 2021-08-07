@@ -1,0 +1,70 @@
+.logo {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  @mixin atMedium {
+    position: absolute;
+    left: 5%;
+    top: 1em;
+    z-index: 1;
+  }
+
+  @mixin atLarge {
+    left: 10.5%;
+  }
+
+  img {
+    width: 10em;
+  }
+
+  &__url {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: currentColor;
+    }
+  }
+
+  &__game {
+    transform: rotate(-7.5deg) translate(-0.5em, -1.25em);
+    line-height: 0.8;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      height: 1px;
+      background-color: #222;
+      width: 60%;
+      position: absolute;
+      left: 20%;
+    }
+
+    &::before {
+      top: -1px;
+    }
+
+    &::after {
+      width: 100%;
+      height: 1px;
+      bottom: -1px;
+      left: 0;
+    }
+
+    > span {
+      font-size: 1.35em;
+      font-weight: 700;
+    }
+  }
+}
+
+.page-header .logo {
+  @mixin atMedium {
+    left: 0;
+    top: 0;
+  }
+}

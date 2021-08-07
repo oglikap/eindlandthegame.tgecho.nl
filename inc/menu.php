@@ -1,21 +1,19 @@
-<div class="menu">
-  <span class="menu__icon menu__icon--visible" uk-icon="menu"></span>
-  <span class="menu__close" uk-icon="close"></span>
-
+ <?php function menu() { ?>
+ 
   <div class="menu__overlay">
-    <nav class="menu__content">
+    <div class="menu">
       <ul class="menu__list">
-        <li>
-          <a href="het-ding-verstopt"> Het ding verstopt</a>
+        <li class="menu__item">
+          <a href="<?php echo esc_url(site_url('het-ding-verstopt')); ?>">Het Ding Verstopt</a>
         </li>
-        <li>
-          <a href="het-ding-dichtbij"> Het ding dichtbij</a>
+        <li class="menu__item">
+          <a href="<?php echo esc_url(site_url('het-ding-dichtbij')); ?>">Het Ding Dichtbij</a>
         </li>
-        <li>
-          <a href="eindland-award"> Eindland Award</a>
+        <li class="menu__item">
+          <a href="<?php echo esc_url(site_url('eindland-award')); ?>">Eindland Award</a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>
-  <h2 class="site-title">Eindland: The Game</h2>
-</div>
+
+<?php } ?>

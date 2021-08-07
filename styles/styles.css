@@ -1,7 +1,10 @@
 @import 'base/_variables';
 @import 'base/_mixins';
+@import 'base/_base';
 @import 'base/_typography';
 
+@import 'modules/_logo';
+@import 'modules/_menu';
 @import 'modules/_countdown';
 @import 'modules/_front-page';
 @import 'modules/_score';

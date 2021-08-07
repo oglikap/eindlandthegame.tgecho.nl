@@ -18,61 +18,6 @@
     font-size: 17px;
   }
 
-  &__logo {
-    display: flex;
-    text-align: center;
-    align-items: center;
-
-    @mixin atMedium {
-      position: absolute;
-      left: 5%;
-      top: 3.5em;
-      z-index: 1;
-    }
-
-    @mixin atLarge {
-      left: 10.5%;
-    }
-
-    img {
-      width: 10em;
-    }
-  }
-
-  &__game {
-    transform: rotate(-7.5deg) translate(-0.5em, -1.25em);
-    line-height: 0.8;
-    text-transform: uppercase;
-    font-size: 1.25em;
-    position: relative;
-
-    &::before,
-    &::after {
-      content: '';
-      height: 1px;
-      background-color: #222;
-      width: 60%;
-      position: absolute;
-      left: 20%;
-    }
-
-    &::before {
-      top: -1px;
-    }
-
-    &::after {
-      width: 100%;
-      height: 1px;
-      bottom: -1px;
-      left: 0;
-    }
-
-    > span {
-      font-size: 1.35em;
-      font-weight: 700;
-    }
-  }
-
   &__image {
     padding-top: 8em;
 
@@ -88,15 +33,11 @@
     }
 
     @mixin atLarge {
-      padding-top: 6em;
+      padding-top: 0;
 
       > img {
         width: 90%;
       }
-    }
-
-    @mixin atLarger {
-      padding-top: 2em;
     }
   }
 
@@ -122,17 +63,21 @@
     }
   }
 
+  &__stip {
+    top: 0;
+    width: 4em;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.85;
+  }
+
   &__start {
-    font-family: $font-secondary;
-    font-size: 2.75em;
     display: flex;
     justify-content: flex-end;
     align-items: center;
   }
 
   &__button {
-    width: 5em;
-    height: 5em;
     transition: transform 0.4s;
     transform: rotate(-5deg);
 
@@ -142,27 +87,31 @@
     }
 
     @mixin atLarge {
-      transform: rotate(-5deg) translate(0, -1em);
+      transform: rotate(-5deg) translate(1em, -3em);
 
       &:hover {
-        transform: scale(1.05) rotate(-5deg) translate(0, -1em);
+        transform: scale(1.05) rotate(-5deg) translate(0.9em, -2.9em);
       }
     }
 
     @mixin atLarger {
-      transform: rotate(-5deg) translate(1em, -1.5em);
+      transform: rotate(-5deg) translate(2em, -4em);
 
       &:hover {
-        transform: scale(1.05) rotate(-5deg) translate(1em, -1.5em);
+        transform: scale(1.05) rotate(-5deg) translate(1.95em, -3.9em);
       }
     }
 
     @mixin atXlarge {
-      transform: rotate(-5deg) translate(2em, -2em);
+      transform: rotate(-5deg) translate(3em, -5em);
 
       &:hover {
-        transform: scale(1.05) rotate(-5deg) translate(2em, -2em);
+        transform: scale(1.05) rotate(-5deg) translate(2.9em, -4.9em);
       }
+    }
+
+    > img {
+      width: 85%;
     }
   }
 }
