@@ -5,6 +5,7 @@
 
 @import 'modules/_logo';
 @import 'modules/_menu';
+@import 'modules/_subtitle';
 @import 'modules/_countdown';
 @import 'modules/_front-page';
 @import 'modules/_score';

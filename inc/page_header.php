@@ -4,7 +4,6 @@
     <a class="logo__url" href="<?php echo esc_url(bloginfo('url')); ?>">
       <?php logo(); ?>      
     </a>
-    <h3 class="site-description"><?php echo bloginfo('description'); ?></h3>
 
     <span class="menu__icon menu__icon--visible" uk-icon="menu"></span>
     <span class="menu__close" uk-icon="close"></span>
@@ -25,6 +24,8 @@
 
     menuClose.addEventListener('click', function() {
       menuOverlay.classList.remove('menu__overlay--active');
+      menuIcon.classList.add('menu__icon--visible');
+      menuClose.classList.remove('menu__close--visible');
     })
   </script>
 

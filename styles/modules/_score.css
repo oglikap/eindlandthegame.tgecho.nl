@@ -1,9 +1,11 @@
 .score {
   overflow: hidden;
   font-size: 14px;
+  z-index: 12;
 
   @mixin atMedium {
-    width: 38%;
+    width: 33%;
+    margin-top: 12em;
   }
 
   &__container {
@@ -12,11 +14,13 @@
     scrollbar-width: thin;
     scrollbar-color: #90a4ae #cfd8dc;
 
-    // height: 20em;
-    background: whitesmoke;
+    background: rgba(#f7f7f7, 0.85);
     overflow-y: auto;
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1px;
+    max-height: 22.5em;
+    z-index: 1;
 
     &::-webkit-scrollbar {
       width: 11px;
@@ -34,8 +38,30 @@
   }
 
   &__title {
-    font-size: 1.125em;
-    word-spacing: -0.125em;
+    font-size: 1.5em;
+    text-transform: uppercase;
     font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  &__list {
+    li {
+      position: relative;
+      margin: 0.5em 0;
+
+      &:not(:last-of-type)::after {
+        content: '';
+        background-color: #ccc;
+        height: 1px;
+        width: 25%;
+        position: absolute;
+        left: -1em;
+        bottom: -0.25em;
+      }
+
+      &:last-of-type {
+        padding-bottom: 2em;
+      }
+    }
   }
 }

@@ -1,16 +1,20 @@
 .logo {
+  font-size: 10px;
   display: flex;
   text-align: center;
   align-items: center;
+  position: relative;
+  z-index: 11;
 
   @mixin atMedium {
+    font-size: 14px;
     position: absolute;
     left: 5%;
     top: 1em;
-    z-index: 1;
   }
 
   @mixin atLarge {
+    font-size: 16px;
     left: 10.5%;
   }
 
@@ -62,9 +66,9 @@
   }
 }
 
-.page-header .logo {
-  @mixin atMedium {
-    left: 0;
-    top: 0;
-  }
-}
+// .page-header .logo {
+//   @mixin atMedium {
+//     left: 0;
+//     top: 0;
+//   }
+// }

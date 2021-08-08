@@ -1,0 +1,21 @@
+.subtitle {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  @mixin atMedium {
+    position: absolute;
+    top: 100%;
+    right: 50%;
+  }
+
+  @mixin atLarge {
+    transform: rotate(90deg);
+    right: -12rem;
+    top: 21rem;
+  }
+
+  @mixin atLarger {
+    top: 23.5rem;
+  }
+}

@@ -11,9 +11,8 @@
          } else {
           echo get_theme_file_uri('/images/kaart-zonder-tekst--large.jpg');
          } ?>"; alt="<?php echo bloginfo('title'); ?>">
-        <div class="front-page__verras">
-          Verras ons met jouw blik op de werkelijkheid
-        </div>
+         
+        <?php subtitle(); ?>
 
         <div class="front-page__stip" id="stip">
            <img src="<?php echo get_theme_file_uri('/images/stip-80.png'); ?>" />
