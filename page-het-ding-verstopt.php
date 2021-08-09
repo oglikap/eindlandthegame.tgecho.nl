@@ -61,18 +61,20 @@
         
         
     </div>
-    <div class="page__uitleg uitleg">
+    <div class="page__uitleg">
         <a href="#" class="uitleg__button">
           <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
         </a>
     </div>
+  </div>
+</div>
 
-    <div class="uitleg__overlay">
-      <div class="uk-container">
-        <a class="uitleg__close" href="#" uk-icon="close"></a>
-        <?php the_field('uitleg') ;?>
-      </div>
-    </div>
+<div class="uitleg__overlay">
+  <div class="uk-container uk-flex uk-flex-right uitleg__top">
+    <a class="uitleg__close" href="#" uk-icon="close"></a>
+  </div>
+  <div class="uk-container uk-container-small">
+    <?php the_field('uitleg') ;?>
   </div>
 </div>
 

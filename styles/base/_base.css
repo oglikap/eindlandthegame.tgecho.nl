@@ -24,3 +24,15 @@
     font-size: 1.6rem;
   }
 }
+
+a,
+.uk-link {
+  color: currentColor;
+  font-size: 1.1em;
+  text-decoration: underline;
+
+  &:hover {
+    color: currentColor;
+    text-decoration: none;
+  }
+}
