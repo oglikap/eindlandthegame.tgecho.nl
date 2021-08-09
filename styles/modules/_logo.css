@@ -3,14 +3,13 @@
   display: flex;
   text-align: center;
   align-items: center;
-  position: relative;
+  position: absolute;
+  left: 5%;
+  top: 1em;
   z-index: 11;
 
   @mixin atMedium {
     font-size: 14px;
-    position: absolute;
-    left: 5%;
-    top: 1em;
   }
 
   @mixin atLarge {

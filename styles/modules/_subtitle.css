@@ -1,21 +1,25 @@
 .subtitle {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 0.875rem;
   font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  right: -6px;
 
   @mixin atMedium {
-    position: absolute;
-    top: 100%;
-    right: 50%;
+    top: -2em;
+    // right: 50%;
+    font-size: 1.2rem;
   }
 
   @mixin atLarge {
     transform: rotate(90deg);
-    right: -12rem;
+    right: -15rem;
     top: 21rem;
   }
 
   @mixin atLarger {
+    right: -12rem;
     top: 23.5rem;
   }
 }
