@@ -6,7 +6,7 @@
   <div class="page">
     <div class="page__content">
 
-    <?php subtitle(); ?>
+      <?php subtitle(); ?>
     
       <h2 class="page__title">Deel 1: Het ding verstopt</h2>
       <h4 class="page__subtitle">Verzin de beste tekst</h4>
@@ -29,7 +29,6 @@
               <?php } ?>
             </div>
             <div class="frames__coordinates"><?php echo $coordinates ?></div>
-
           <?php
             // Check rows exists.
             if( have_rows('items') ):
@@ -59,10 +58,37 @@
         <?php endwhile; ?>
         </ul>
       <?php endif; ?>
-
+        
+        
+    </div>
+    <div class="page__uitleg uitleg">
+        <a href="#" class="uitleg__button">
+          <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
+        </a>
     </div>
 
+    <div class="uitleg__overlay">
+      <div class="uk-container">
+        <a class="uitleg__close" href="#" uk-icon="close"></a>
+        <?php the_field('uitleg') ;?>
+      </div>
+    </div>
   </div>
 </div>
+
+<script>
+  const uitleg = document.querySelector('.uitleg__button');
+  const uitlegClose = document.querySelector('.uitleg__close');
+
+  const uitlegOverlay = document.querySelector('.uitleg__overlay');
+
+  uitleg.addEventListener('click', function() {
+    uitlegOverlay.classList.add('uitleg__overlay--active')
+  })
+
+  uitlegClose.addEventListener('click', function() {
+    uitlegOverlay.classList.remove('uitleg__overlay--active')
+  })
+</script>
 
 <?php get_footer(); ?>

@@ -6,7 +6,7 @@
   position: absolute;
   left: 5%;
   top: 1em;
-  z-index: 11;
+  z-index: 31;
 
   @mixin atMedium {
     font-size: 14px;

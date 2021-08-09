@@ -1,0 +1,31 @@
+.uitleg {
+  &__overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    opacity: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--active {
+      opacity: 1;
+      z-index: 19;
+    }
+  }
+
+  &__close {
+    top: 4em;
+    right: 4em;
+    position: absolute;
+
+    svg {
+      width: 3em;
+    }
+  }
+}
