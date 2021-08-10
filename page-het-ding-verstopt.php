@@ -28,7 +28,7 @@
               <?php } ?>
             </div>
             <div class="frames__coordinates"><?php echo $coordinates ?></div>
-            <?php
+            <!-- <?php
             // Check rows exists.
             if( have_rows('items') ):
 
@@ -50,7 +50,7 @@
             // No value.
             else :
                 // Do something...
-            endif; ?>
+            endif; ?> -->
 
           </li>
 

@@ -7,15 +7,6 @@
     opacity: 0;
     z-index: -1;
 
-    @mixin atMedium {
-      font-size: 16px;
-      right: -1em;
-    }
-
-    @mixin atLarge {
-      right: -2em;
-    }
-
     svg {
       width: 3em;
     }
@@ -40,6 +31,18 @@
     &--visible {
       opacity: 1;
       z-index: 11;
+    }
+  }
+
+  &__icon,
+  &__close {
+    @mixin atMedium {
+      font-size: 16px;
+      right: -1em;
+    }
+
+    @mixin atLarge {
+      right: -2em;
     }
   }
 

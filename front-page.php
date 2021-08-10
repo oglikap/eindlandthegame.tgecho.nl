@@ -7,16 +7,13 @@
       <div class="front-page__image">
         <?php logo(); ?>
         <img src="<?php if(wp_is_mobile()) {
-          echo get_theme_file_uri('/images/kaart-zonder-tekst--small.jpg');
+          echo get_theme_file_uri('/images/kaart-zonder-tekst-stip--small.jpg');
          } else {
-          echo get_theme_file_uri('/images/kaart-zonder-tekst--large.jpg');
+          echo get_theme_file_uri('/images/kaart-zonder-tekst-stip--large.jpg');
          } ?>"; alt="<?php echo bloginfo('title'); ?>">
          
         <?php subtitle(); ?>
 
-        <div class="front-page__stip" id="stip">
-           <img src="<?php echo get_theme_file_uri('/images/stip-80.png'); ?>" />
-        </div>
       </div>
      
       <div class="front-page__start">

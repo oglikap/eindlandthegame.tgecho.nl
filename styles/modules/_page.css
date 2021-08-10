@@ -48,7 +48,7 @@
   &__uitleg {
     position: absolute;
     right: 0;
-    bottom: 10%;
+    bottom: -12em;
     z-index: 1;
     transform: rotate(-5deg);
 
