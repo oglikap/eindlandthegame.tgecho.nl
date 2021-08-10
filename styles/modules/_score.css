@@ -22,6 +22,10 @@
     border-radius: 1px;
     max-height: 22.5em;
 
+    @mixin atMedium {
+      padding: 1em;
+    }
+
     &::-webkit-scrollbar {
       width: 11px;
     }
@@ -42,9 +46,12 @@
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 1px;
+    line-height: 0;
   }
 
   &__list {
+    padding-left: 0.75em;
+
     li {
       position: relative;
       margin: 0.5em 0;

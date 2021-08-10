@@ -3,13 +3,12 @@
 <div class="uk-container uk-container-large">
   <?php page_header(); ?>
 
-  <div class="page">
+  <div class="page">  
+  <?php subtitle(); ?>
     <div class="page__content">
-
-      <?php subtitle(); ?>
     
       <h2 class="page__title">Deel 1: Het ding verstopt</h2>
-      <h4 class="page__subtitle">Verzin de beste tekst</h4>
+      <h4 class="page__subtitle"><span>Verzin de beste tekst</span></h4>
 
       <?php if(have_rows('week')): ?>
         <ul class="frames">
@@ -29,7 +28,7 @@
               <?php } ?>
             </div>
             <div class="frames__coordinates"><?php echo $coordinates ?></div>
-          <?php
+            <?php
             // Check rows exists.
             if( have_rows('items') ):
 
@@ -59,12 +58,11 @@
         </ul>
       <?php endif; ?>
         
-        
-    </div>
-    <div class="page__uitleg">
+      <div class="page__uitleg">
         <a href="#" class="uitleg__button">
           <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
         </a>
+    </div>
     </div>
   </div>
 </div>

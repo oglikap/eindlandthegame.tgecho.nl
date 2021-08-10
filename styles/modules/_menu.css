@@ -9,6 +9,11 @@
 
     @mixin atMedium {
       font-size: 16px;
+      right: -1em;
+    }
+
+    @mixin atLarge {
+      right: -2em;
     }
 
     svg {
@@ -83,6 +88,7 @@
 
     > a {
       color: currentColor;
+      text-decoration: none;
     }
   }
 }

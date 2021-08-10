@@ -5,6 +5,7 @@
   background-position: center;
   background-size: cover;
   padding-top: 2em;
+  background-color: #f7f7f7;
 
   @mixin atMedium {
     font-size: 14px;
@@ -89,7 +90,11 @@
     }
 
     > img {
-      width: 85%;
+      width: 50%;
+
+      @mixin atMedium {
+        width: 85%;
+      }
     }
   }
 }
@@ -156,7 +161,7 @@
   }
 
   &__buttons {
-    font-size: 7px;
+    font-size: 9px;
     display: flex;
     flex-wrap: wrap;
     padding: 0;
@@ -176,12 +181,9 @@
 
   &__button {
     font-size: 2em;
-    width: 7em;
+    width: 5em;
     height: 5em;
     filter: drop-shadow(0 1px #fff);
-    // background-color: rgba(#222, 0.15);
-    border-radius: 50%;
-    // border: 1px solid #ccc;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +194,8 @@
     a {
       color: currentColor;
       display: inline-block;
-      padding: 1.5em;
+      padding: 0.5em;
+      text-decoration: none;
       transition: transform 0.3s;
 
       &:hover {
@@ -201,4 +204,8 @@
       }
     }
   }
+}
+
+.front-page .logo {
+  top: 5em;
 }

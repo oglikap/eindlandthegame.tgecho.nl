@@ -5,21 +5,24 @@
   line-height: 1;
   position: absolute;
   right: -6px;
+  top: 3em;
+  // width: 60%;
+  display: none;
 
   @mixin atMedium {
-    top: -2em;
-    // right: 50%;
+    top: 0;
     font-size: 1.2rem;
   }
 
   @mixin atLarge {
+    display: block;
     transform: rotate(90deg);
-    right: -15rem;
+    right: -15%;
     top: 21rem;
   }
 
   @mixin atLarger {
-    right: -12rem;
+    // right: -12rem;
     top: 23.5rem;
   }
 }

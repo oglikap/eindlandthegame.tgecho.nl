@@ -1,4 +1,10 @@
 .uitleg {
+  &__button {
+    > img {
+      width: 12em;
+    }
+  }
+
   &__overlay {
     padding: 3em 0;
     position: absolute;

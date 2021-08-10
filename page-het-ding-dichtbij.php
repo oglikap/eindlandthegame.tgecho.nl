@@ -1,54 +1,54 @@
 <?php get_header(); ?>
 
-<div class="uk-container uk-container-large">
-  <?php page_header(); ?>
+  <div class="uk-container uk-container-large">
+    <?php page_header(); ?>
 
-  <div class="page">
-    <div class="page__content">
-
+      <div class="page">
       <?php subtitle(); ?>
-    
-      <h2 class="page__title">Deel 2: Het ding dichtbij</h2>
-      <h4 class="page__subtitle">Maak het beste beeld</h4>
+        <div class="page__content">
 
-      <?php if(have_rows('week_beeld')): ?>
-        <ul class="frames">
+          <h2 class="page__title">Deel 2: Het ding dichtbij</h2>
+          <h4 class="page__subtitle"><span>Maak het beste beeld</span></h4>
 
-        <?php while(have_rows('week_beeld')): the_row(); 
-        
-          $name = get_sub_field('naam_beeld');
-          $text = get_sub_field('tekst_beeld');
-          ?>
-          <li class="frames__item" style="background-image: url(<?php echo esc_url(get_theme_file_uri('/images/polaroid_frame--small.png')); ?>)">
-            <div class="frames__image">
-              <?php if(get_sub_field('image_beeld')) { ?>
-                <img src="<?php the_sub_field('image_beeld'); ?>" alt="">
-              <?php } else { ?>
-                <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
-              <?php } ?>
+          <?php if(have_rows('week_beeld')): ?>
+            <ul class="frames">
 
-              <div class="frames__credit"><span>Foto:</span> <?php echo $name; ?></div>
-              <?php if($text) { ?>
-                <div class="frames__img-comment">
-                  <?php echo $text; ?>
+            <?php while(have_rows('week_beeld')): the_row(); 
+            
+              $name = get_sub_field('naam_beeld');
+              $text = get_sub_field('tekst_beeld');
+              ?>
+              <li class="frames__item" style="background-image: url(<?php echo esc_url(get_theme_file_uri('/images/polaroid_frame--small.png')); ?>)">
+                <div class="frames__image">
+                  <?php if(get_sub_field('image_beeld')) { ?>
+                    <img src="<?php the_sub_field('image_beeld'); ?>" alt="">
+                  <?php } else { ?>
+                    <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
+                  <?php } ?>
+
+                  <div class="frames__credit"><span>Foto:</span> <?php echo $name; ?></div>
+                  <?php if($text) { ?>
+                    <div class="frames__img-comment">
+                      <?php echo $text; ?>
+                    </div>
+                  <?php } ?>
                 </div>
-              <?php } ?>
-            </div>
-          <?php ?>
+              <?php ?>
 
-          </li>
+              </li>
 
-        <?php endwhile; ?>
-        </ul>
-      <?php endif; ?>
+            <?php endwhile; ?>
+            </ul>
+          <?php endif; ?>
         
-        
-    </div>
-    <div class="page__uitleg">
+      </div>
+      <div class="page__uitleg">
         <a href="#" class="uitleg__button">
           <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
         </a>
+    </div>    
     </div>
+    
   </div>
 </div>
 
