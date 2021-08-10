@@ -11,47 +11,30 @@
       <h2 class="page__title">Deel 2: Het ding dichtbij</h2>
       <h4 class="page__subtitle">Maak het beste beeld</h4>
 
-      <?php if(have_rows('week')): ?>
+      <?php if(have_rows('week_beeld')): ?>
         <ul class="frames">
 
-        <?php while(have_rows('week')): the_row(); 
+        <?php while(have_rows('week_beeld')): the_row(); 
         
-          $week = get_sub_field('which_week');
-          $coordinates = get_sub_field('coordinates')
+          $name = get_sub_field('naam_beeld');
+          $text = get_sub_field('tekst_beeld');
           ?>
           <li class="frames__item" style="background-image: url(<?php echo esc_url(get_theme_file_uri('/images/polaroid_frame--small.png')); ?>)">
-            <div class="frames__date"><?php echo $week ?></div>
             <div class="frames__image">
-              <?php if(get_sub_field('image')) { ?>
-                <img src="<?php the_sub_field('image'); ?>" alt="">
+              <?php if(get_sub_field('image_beeld')) { ?>
+                <img src="<?php the_sub_field('image_beeld'); ?>" alt="">
               <?php } else { ?>
                 <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
               <?php } ?>
+
+              <div class="frames__credit"><span>Foto:</span> <?php echo $name; ?></div>
+              <?php if($text) { ?>
+                <div class="frames__img-comment">
+                  <?php echo $text; ?>
+                </div>
+              <?php } ?>
             </div>
-            <div class="frames__coordinates"><?php echo $coordinates ?></div>
-          <?php
-            // Check rows exists.
-            if( have_rows('items') ):
-
-                // Loop through rows.
-                while( have_rows('items') ) : the_row();
-
-                    // Load sub field value.
-                    $name = get_sub_field('naam');
-                    $text = get_sub_field('tekst');
-                    ?>
-                    <div class="frames__id">
-                      <div class="frames__name"><?php echo $name; ?></div>
-                      <div class="frames__bijdrage">
-                      <?php echo $text; ?>
-                      </div>
-                    </div>
-                  <?php // End loop.
-                endwhile;
-            // No value.
-            else :
-                // Do something...
-            endif; ?>
+          <?php ?>
 
           </li>
 
