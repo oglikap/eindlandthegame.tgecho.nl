@@ -15,24 +15,24 @@
     <div class="score">
       <div class="score__container">
   
-      <?php if(have_rows('kandidaat')): ?>
+      <?php if(have_rows('top_5_deel1')): ?>
   
         <h4 class="score__title">Ranking</h4>
         <ol class="score__list">
 
-          <?php while(have_rows('kandidaat')) : the_row(); 
-            $name = get_sub_field('naam');
-            $score_1 = get_sub_field('score_1');
-            $score_2 = get_sub_field('score_2');
-            $score_3 = get_sub_field('score_3');
-            $score_4 = get_sub_field('score_4');
-            $score_5 = get_sub_field('score_5');
+          <?php while(have_rows('top_5_deel1')) : the_row(); 
+            $name_deelnemer = get_sub_field('naam_deelnemer');
+            $score = get_sub_field('score');
+            // $score_2 = get_sub_field('score_2');
+            // $score_3 = get_sub_field('score_3');
+            // $score_4 = get_sub_field('score_4');
+            // $score_5 = get_sub_field('score_5');
 
-            $total_score = round(($score_1 + $score_2 + $score_3 + $score_4 + $score_5)/ 5, 1);
+            // $total_score = round(($score_1 + $score_2 + $score_3 + $score_4 + $score_5)/ 5, 1);
           ?>
-            <!-- <li><//?php echo $name; echo " - "; echo $total_score; ?></li> -->
+            <li><?php echo $name_deelnemer; echo " - "; echo $score; ?></li>
           <?php endwhile; ?>
-          <li>Piet Keizer 106</li>
+          <!-- <li>Piet Keizer 106</li>
           <li>Wim Kieft 101</li>
           <li>Sonny Silooy 98</li>
           <li>Berry van Aerle 97</li>
@@ -47,12 +47,12 @@
           <li>Margeet Dolman 61</li>
           <li>Piet Paaltjens 60</li>
           <li>Andre Hazes 58</li>
-          <li>Anky van Grunsven 56</li>
+          <li>Anky van Grunsven 56</li> -->
         </ol>
 
       <?php else : ?>
-        <!-- <h3 class="score__title">Nog geen scores...</h3> -->
-        <li>Piet Keizer 106</li>
+        <h3 class="score__title">Nog geen scores...</h3>
+        <!-- <li>Piet Keizer 106</li>
           <li>Wim Kieft 101</li>
           <li>Sonny Silooy 98</li>
           <li>Berry van Aerle 97</li>
@@ -67,7 +67,7 @@
           <li>Margeet Dolman 61</li>
           <li>Piet Paaltjens 60</li>
           <li>Andre Hazes 58</li>
-          <li>Anky van Grunsven 56</li>
+          <li>Anky van Grunsven 56</li> -->
       <?php endif; ?>
 
       </div>
