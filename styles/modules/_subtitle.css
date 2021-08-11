@@ -17,4 +17,18 @@
   @mixin atLarger {
     top: 23.5rem;
   }
+
+  &--wide {
+    @mixin atLarge {
+      right: -24%;
+    }
+
+    @mixin atLarger {
+      right: -20%;
+    }
+
+    @mixin atXlarge {
+      right: -17.5%;
+    }
+  }
 }
