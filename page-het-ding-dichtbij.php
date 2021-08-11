@@ -25,9 +25,12 @@
                 <div class="frames__bg-img" style="background-image: url(<?php echo esc_url(get_theme_file_uri('/images/polaroid_frame--small.png')); ?>);">
                   <!-- FOTO -->
                   <div class="frames__image">
-                    <?php if(get_sub_field('image_beeld')) { ?>
-                      <img style="top: 1.7em" src="<?php the_sub_field('image_beeld'); ?>" alt="">
-                    <?php } else { ?>
+                    <?php 
+                     $image_beeld = get_sub_field('image_beeld');
+                     $size = 'square';
+                     if($image_beeld) {
+                       echo wp_get_attachment_image($image_beeld, $size);
+                   } else { ?>
                       <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
                     <?php } ?>
 
