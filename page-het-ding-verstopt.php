@@ -27,11 +27,15 @@
                     <div class="frames__date"><?php echo $week ?></div>
                     <div class="frames__coordinates"><?php echo $coordinates ?></div>
 
+
                     <!-- FOTO -->
                     <div class="frames__image">
-                      <?php if(get_sub_field('image')) { ?>
-                        <img src="<?php the_sub_field('image'); ?>" alt="">
-                      <?php } else { ?>
+                      <?php 
+                      $image_verstopt = get_sub_field('image');
+                      $size = 'square';
+                      if($image_verstopt) {
+                        echo wp_get_attachment_image($image_verstopt, $size);
+                    } else { ?>
                         <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
                       <?php } ?>
                     </div>
