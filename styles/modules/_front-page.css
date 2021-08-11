@@ -67,26 +67,26 @@
     }
 
     @mixin atLarge {
-      transform: rotate(-5deg) translate(1em, -3em);
+      transform: rotate(-5deg) translate(1em, -4em);
 
       &:hover {
-        transform: scale(1.05) rotate(-5deg) translate(0.9em, -2.9em);
+        transform: scale(1.05) rotate(-5deg) translate(0.9em, -3.9em);
       }
     }
 
     @mixin atLarger {
-      transform: rotate(-5deg) translate(2em, -4em);
+      transform: rotate(-5deg) translate(2em, -5em);
 
       &:hover {
-        transform: scale(1.05) rotate(-5deg) translate(1.95em, -3.9em);
+        transform: scale(1.05) rotate(-5deg) translate(1.95em, -4.9em);
       }
     }
 
     @mixin atXlarge {
-      transform: rotate(-5deg) translate(3em, -5em);
+      transform: rotate(-5deg) translate(3em, -7em);
 
       &:hover {
-        transform: scale(1.05) rotate(-5deg) translate(2.9em, -4.9em);
+        transform: scale(1.05) rotate(-5deg) translate(2.9em, -6.9em);
       }
     }
 
