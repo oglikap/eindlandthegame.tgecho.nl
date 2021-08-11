@@ -3,7 +3,7 @@
   <?php if(is_user_logged_in()) { ?>
   
   <div class="front-page">
-    <div class="uk-container">
+    <div class="uk-container uk-container-large">
       <div class="front-page__image">
         <?php logo(); ?>
         <img src="<?php if(wp_is_mobile()) {
@@ -18,7 +18,7 @@
      
       <div class="front-page__start">
         <a class="front-page__button" href="<?php echo esc_url(site_url('start')); ?>">
-          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/start-300.png" alt="Start">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/images/start-alt-300.png" alt="Start">
         </a>
       </div>
     </div>  

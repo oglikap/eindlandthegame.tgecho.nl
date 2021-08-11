@@ -75,29 +75,7 @@
 
     <div class="home__text">
       <div class="home__text-inner">
-        <p>
-          Het is het jaar 2393. We bekijken de wereld gezien door de ogen van een
-          postapocalyptische wezen. Veel kennis is verloren gegaan, waardoor we ons verbazen
-          over de dingen om ons heen. Bij alles vragen we ons af: wat zou het kunnen zijn?
-        </p>
-
-        <p>
-          Het spel bestaat uit twee onderdelen: “Het Ding Verstopt” & “Het Ding Dichtbij”.
-          <br />
-          Bij “Het Ding Verstopt” gaat het om zes foto’s die ergens in het centrum van Arnhem
-          zijn verstopt. Aan jou de opdracht om de foto’s te vinden en een zo leuk mogelijke
-          tekst bij te verzinnen. Denk: Wat zou het ding op de foto kunnen zijn, gezien door
-          de ogen van een postapocalyptisch wezen?<br />
-          Bij “Het Ding Dichtbij” aan jou de opdracht om zelf een ding uit jouw omgeving te
-          fotograferen, waarbij je duidelijk maakt (door hoe je het fotografeert, of door het
-          onderschrift dat je het meegeeft) hoe de postapocalypt dit ding beziet!
-        </p>
-        <p>
-          Het spel duurt vijf weken: van za 14 aug t/m vr 17 sep. Wekelijks kiest een jury per
-          onderdeel (NB Bij “Het Ding Verstopt” worden alle zes foto’s gezien als een los
-          onderdeel!) de leukste inzending. Deze worden beloond met een vrijkaartje voor de
-          voorstelling EINDLAND van Theatergroep Echo.
-        </p>
+        <?php the_field('content_startpagina'); ?>
       </div>
 
       <ul class="home__buttons">

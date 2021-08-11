@@ -30,8 +30,8 @@ function eindland_theme_files() {
     wp_enqueue_script('eindland_main_script', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
   } else {
     //wp_enqueue_script('our_verdors', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-    wp_enqueue_script('eindland_main_script', get_theme_file_uri('/bundled-assets/scripts.c9deea9aa6aa3f084cf5.js'), NULL, '1.0', true);
-    wp_enqueue_style('eindland_main_styles', get_theme_file_uri('/bundled-assets/styles.c9deea9aa6aa3f084cf5.css'));
+    wp_enqueue_script('eindland_main_script', get_theme_file_uri('/bundled-assets/scripts.d8e300786b679a5c3827.js'), NULL, '1.0', true);
+    wp_enqueue_style('eindland_main_styles', get_theme_file_uri('/bundled-assets/styles.d8e300786b679a5c3827.css'));
   }
 
   wp_localize_script('eindland_main_script', 'eindlandData', array(
