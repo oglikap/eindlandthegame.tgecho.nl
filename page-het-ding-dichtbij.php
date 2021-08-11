@@ -46,8 +46,38 @@
           </div>
 
         <?php endif; // have_rows('week_beeld') ?>
+        <div class="page__uitleg">
+            <a href="#" class="uitleg__button">
+              <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
+            </a>
+        </div>    
       </div>
 
     </div>
   </div>
-  <?php get_footer(); ?>
+
+  <div class="uitleg__overlay">
+  <div class="uk-container uk-flex uk-flex-right uitleg__top">
+    <a class="uitleg__close" href="#" uk-icon="close"></a>
+  </div>
+  <div class="uk-container uk-container-small">
+    <?php the_field('uitleg') ;?>
+  </div>
+</div>
+
+<script>
+  const uitleg = document.querySelector('.uitleg__button');
+  const uitlegClose = document.querySelector('.uitleg__close');
+
+  const uitlegOverlay = document.querySelector('.uitleg__overlay');
+
+  uitleg.addEventListener('click', function() {
+    uitlegOverlay.classList.add('uitleg__overlay--active')
+  })
+
+  uitlegClose.addEventListener('click', function() {
+    uitlegOverlay.classList.remove('uitleg__overlay--active')
+  })
+</script>
+
+<?php get_footer(); ?>

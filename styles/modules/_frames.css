@@ -106,6 +106,10 @@
     }
   }
 
+  &__items {
+    padding: 0 0.75em;
+  }
+
   &__credit {
     position: absolute;
     bottom: 30%;
