@@ -54,7 +54,6 @@
 
     @mixin atLarger {
       right: 10%;
-      bottom: 15%;
     }
   }
 }

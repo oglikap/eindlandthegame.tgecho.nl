@@ -9,7 +9,7 @@
           Verras ons met jouw blik op de werkelijkheid
         </div>
 
-        <h2 class="page__title">Deel 1: Het ding verstopt</h2>
+        <h2 class="page__title"><?php the_title(); ?></h2>
         <h4 class="page__subtitle"><span>Verzin de beste tekst</span></h4>
 
         <?php if(have_rows('week')): ?>

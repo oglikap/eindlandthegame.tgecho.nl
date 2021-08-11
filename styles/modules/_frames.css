@@ -95,10 +95,6 @@
     line-height: 1.25;
   }
 
-  &__items {
-    padding: 0 1em;
-  }
-
   &__name {
     text-transform: uppercase;
     font-weight: bold;
@@ -107,7 +103,33 @@
       text-transform: none;
       font-style: italic;
       font-size: 1.25em;
-      font-weight: lighter;
     }
+  }
+
+  &__credit {
+    position: absolute;
+    bottom: 30%;
+    font-style: italic;
+    left: 2em;
+
+    > span {
+      font-style: normal;
+      font-weight: 700;
+    }
+  }
+
+  &__img-comment {
+    position: absolute;
+    bottom: 3em;
+    left: 2em;
+    opacity: 0.85;
+    font-size: 1.2em;
+    background-color: #fff;
+    border: 1px solid;
+    padding: 0.125em 0.25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 }
