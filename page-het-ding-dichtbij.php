@@ -1,5 +1,11 @@
 <?php get_header(); ?>
 
+<style>
+  .frames__image > img {
+     top: 1.7em;
+  }
+</style>
+
   <div class="page">  
     <div class="uk-container uk-container-large">
 
