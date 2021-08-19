@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="front-page" style="padding-top: 6em">
+<div class="front-page">
   <div class="uk-container">
     <div class="front-page__image">
       <?php logo(); ?>

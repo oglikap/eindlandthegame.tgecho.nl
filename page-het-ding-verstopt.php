@@ -29,16 +29,24 @@
 
 
                     <!-- FOTO -->
-                    <div class="frames__image">
-                      <?php 
-                      $image_verstopt = get_sub_field('image');
-                      $size = 'square';
-                      if($image_verstopt) {
-                        echo wp_get_attachment_image($image_verstopt, $size);
+                    <div class="frames__image" uk-lightbox>
+                    <?php 
+                      $image = get_sub_field('image');
+                    
+                      if($image) {
+                        $url = $image['url'];
+                        $size = 'square';
+                        $square = $image['sizes'][$size];
+                      ?>
+                      <a href="<?php echo esc_url($url); ?>">
+                        <img src="<?php echo esc_url($square); ?>">
+                      </a>
+                      <?php
                     } else { ?>
-                        <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
-                      <?php } ?>
-                    </div>
+                      <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
+                    <?php } ?>
+
+                  </div>
                      
                   </div>
                   <?php if( have_rows('items') ):
