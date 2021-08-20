@@ -62,12 +62,19 @@
           </div>
 
         <?php endif; // have_rows('week_beeld') ?>
-        <div class="page__uitleg">
-            <a href="#" class="uitleg__button">
-              <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
-            </a>
-        </div>    
+          
       </div>
+
+      <div class="page__uitleg">
+          <a href="#" class="uitleg__button">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
+          </a>
+        </div>
+        <div class="page__ranking">
+          <a href="<?php echo esc_url(site_url('ding-dichtbij-top-5')); ?>" class="ranking__button">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/ranking-240.png')); ?>" alt="">            
+          </a>
+        </div>  
 
     </div>
   </div>

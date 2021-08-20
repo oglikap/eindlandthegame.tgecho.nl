@@ -10,7 +10,7 @@
   }
 
   @mixin atLarger {
-    font-size: 11.25px;
+    font-size: 13px;
   }
 
   @mixin atXlarge {
@@ -51,7 +51,7 @@
       width: 70%;
       z-index: -1;
       top: 0.5em;
-      left: 17.5%;
+      left: 15%;
     }
   }
 
