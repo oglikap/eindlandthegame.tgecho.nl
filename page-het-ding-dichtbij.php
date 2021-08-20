@@ -81,13 +81,13 @@
   </div>
 
   <div class="uitleg__overlay">
-  <div class="uk-container uk-flex uk-flex-right uitleg__top">
-    <a class="uitleg__close" href="#" uk-icon="close"></a>
+    <div class="uk-container uk-flex uk-flex-right uitleg__top">
+      <a class="uitleg__close" href="#" uk-icon="close"></a>
+    </div>
+    <div class="uk-container uk-container-small">
+      <?php the_field('uitleg') ;?>
+    </div>
   </div>
-  <div class="uk-container uk-container-small">
-    <?php the_field('uitleg') ;?>
-  </div>
-</div>
 
 <script>
   const uitleg = document.querySelector('.uitleg__button');
