@@ -16,12 +16,38 @@
     align-items: center;
     text-transform: lowercase;
     letter-spacing: 1px;
+    position: relative;
 
     span {
       font-size: 2em;
       text-transform: uppercase;
       display: inline-block;
       transform: translate(4px, -2px);
+    }
+  }
+
+  &__points {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 3em;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    color: #ffff48;
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
+    padding: 0.15em;
+    border: 1px solid #aaa;
+
+    span {
+      font-size: 0.2em;
+      display: inline-block;
+      transform: translateY(-8px);
     }
   }
 

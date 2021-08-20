@@ -17,10 +17,6 @@
     font-size: 14px;
   }
 
-  &__item {
-    margin-top: 2em;
-  }
-
   &__bg-img {
     background-size: cover;
     background-position: center;

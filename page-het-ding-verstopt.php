@@ -67,13 +67,21 @@
           </div>
 
         <?php endif; // have_rows('week') ?>
-        <div class="page__uitleg">
-          <a href="#" class="uitleg__button">
+        
+      </div>
+    </div>
+    <footer class="page-footer">
+      <div class="uk-container uk-container-large">
+        <div class="uk-flex uk-flex-right">
+          <a href="#" class="button">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
+          </a>
+          <a href="<?php echo esc_url(site_url('ding-verstopt-top-5')); ?>" class="button">
+            <img src="<?php echo esc_url(get_theme_file_uri('/images/ranking-240.png')); ?>" alt="">            
           </a>
         </div>
       </div>
-    </div>
+    </footer>
   </div>
 
   <div class="uitleg__overlay">

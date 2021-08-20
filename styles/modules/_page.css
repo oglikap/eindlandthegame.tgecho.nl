@@ -1,5 +1,5 @@
 .page {
-  height: 100%;
+  min-height: 100vh;
   font-size: 11px;
   position: relative;
 
@@ -18,6 +18,7 @@
   &__content {
     margin-top: 10em;
     position: relative;
+    min-height: 60vh;
   }
 
   &__title {
@@ -55,40 +56,6 @@
     > span::after {
       display: inline-block;
       margin-left: 0.5em;
-    }
-  }
-
-  &__uitleg,
-  &__ranking {
-    position: absolute;
-    right: 2em;
-    bottom: 4em;
-    z-index: 1;
-    transform: rotate(-5deg);
-    width: 8em;
-    height: 4em;
-
-    @mixin atMedium {
-      width: 10em;
-      height: 5em;
-      right: 4em;
-    }
-
-    @mixin atLarger {
-      right: 10%;
-    }
-  }
-
-  &__uitleg {
-    right: 11em;
-    bottom: 3.5em;
-
-    @mixin atMedium {
-      right: 27.5%;
-    }
-
-    @mixin atLarger {
-      right: 27.5%;
     }
   }
 }

@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-position: center;
   background-size: cover;
-  padding-top: 6em;
+  padding-top: 3em;
   background-color: #f7f7f7;
   position: relative;
 
@@ -41,14 +41,6 @@
         width: 90%;
       }
     }
-  }
-
-  &__stip {
-    top: 0;
-    width: 4em;
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.85;
   }
 
   &__start {

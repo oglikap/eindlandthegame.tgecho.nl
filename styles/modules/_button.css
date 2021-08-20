@@ -1,0 +1,6 @@
+.button {
+  width: 10em;
+  transform: rotate(-5deg);
+
+  margin-right: 1em;
+}
