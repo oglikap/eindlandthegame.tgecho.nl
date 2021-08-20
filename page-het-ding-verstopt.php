@@ -10,7 +10,7 @@
         </div>
 
         <h2 class="page__title"><?php the_title(); ?></h2>
-        <h4 class="page__subtitle"><span>Verzin de beste tekst</span></h4>
+        <h4 class="page__subtitle uk-margin-bottom"><span>Verzin de beste tekst</span></h4>
 
         <?php if(have_rows('week')): ?>
           <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">

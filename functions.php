@@ -47,7 +47,7 @@ function eindland_theme_features() {
   add_theme_support('title-tag');
   add_theme_support('post-thumbnails');
   add_image_size('square', 450, 450, true);
-  // add_image_size('front', 1200, 600, true);
+  add_image_size('front', 1680, 1207, true);
 
 }
 add_action('after_setup_theme', 'eindland_theme_features');
