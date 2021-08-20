@@ -69,7 +69,7 @@
     <footer class="page-footer">
       <div class="uk-container uk-container-large">
         <div class="uk-flex uk-flex-right uk-flex-middle">
-          <a href="#" class="button">
+          <a href="#" class="button uitleg__button">
             <img src="<?php echo esc_url(get_theme_file_uri('/images/uitleg-240.png')); ?>" alt="">            
           </a>
           <a href="<?php echo esc_url(site_url('ding-dichtbij-top-5')); ?>" class="button">
