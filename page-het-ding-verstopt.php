@@ -27,7 +27,6 @@
                     <div class="frames__date"><?php echo $week ?></div>
                     <div class="frames__coordinates"><?php echo $coordinates ?></div>
 
-
                     <!-- FOTO -->
                     <div class="frames__image" uk-lightbox>
                     <?php 
