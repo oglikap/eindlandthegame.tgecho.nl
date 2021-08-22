@@ -1,27 +1,15 @@
 <?php
 
 require get_theme_file_path('/inc/menu.php');
-// require get_theme_file_path('/inc/photo.php');
-// require get_theme_file_path('/inc/tiles.php');
+require get_theme_file_path('/inc/frames_item.php');
 require get_theme_file_path('/inc/uitleg_jury.php');
 require get_theme_file_path('/inc/logo.php');
 require get_theme_file_path('/inc/page_header.php');
 require get_theme_file_path('/inc/subtitle.php');
 
-// function eindland_theme_custom_rest() {
-//   register_rest_field('post', 'authorName', array(
-//     'get_callback' => function() {
-//       return get_the_author();
-//     }
-//   ));
-// }
-
-// add_action('rest_api_init', 'eindland_theme_custom_rest');
-
 // THEME FILES
 function eindland_theme_files() {
   wp_enqueue_style('sedgwick_font', 'https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
-  // wp_enqueue_style('josefin_slab', 'https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;400;700&display=swap');
   wp_enqueue_style('alegreya', 'https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap');
   wp_enqueue_style('uikit_css', 'https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css');
   wp_enqueue_script('uikit_js', 'https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js', NULL, '1.0', true);
@@ -30,8 +18,8 @@ function eindland_theme_files() {
     wp_enqueue_script('eindland_main_script', 'http://localhost:3000/bundled.js', NULL, '1.0', true);
   } else {
     //wp_enqueue_script('our_verdors', get_theme_file_uri('/bundled-assets/undefined'), NULL, '1.0', true);
-    wp_enqueue_script('eindland_main_script', get_theme_file_uri('/bundled-assets/scripts.61941a4cebd611d077f9.js'), NULL, '1.0', true);
-    wp_enqueue_style('eindland_main_styles', get_theme_file_uri('/bundled-assets/styles.61941a4cebd611d077f9.css'));
+    wp_enqueue_script('eindland_main_script', get_theme_file_uri('/bundled-assets/scripts.8e3a91f4b8ef11fc0856.js'), NULL, '1.0', true);
+    wp_enqueue_style('eindland_main_styles', get_theme_file_uri('/bundled-assets/styles.8e3a91f4b8ef11fc0856.css'));
   }
 
   wp_localize_script('eindland_main_script', 'eindlandData', array(

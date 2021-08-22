@@ -18,50 +18,59 @@
         <h2 class="page__title"><?php the_title(); ?></h2>
         <h4 class="page__subtitle"><span>Maak het beste beeld</span></h4>
 
-        <?php if(have_rows('week_beeld')): ?>
-
+        <?php if(have_rows('week_beeld_6')): ?>
+          <h3>Week 2</h3>
           <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
-            <?php while(have_rows('week_beeld')): the_row(); 
-              
-              $name = get_sub_field('naam_beeld');
-              $text = get_sub_field('tekst_beeld');
-            ?>
-            <div>
-              <div class="frames__item">
-                <div class="frames__bg-img" style="background-image: url(<?php echo esc_url(get_theme_file_uri('/images/polaroid_frame--small.png')); ?>);">
-                  <!-- FOTO -->
-                  <div class="frames__image" uk-lightbox>
-                      <?php 
-                        $image_beeld = get_sub_field('image_beeld');
-                      
-                        if($image_beeld) {
-                          $url = $image_beeld['url'];
-                          $size = 'square';
-                          $square = $image_beeld['sizes'][$size];
-                        ?>
-                        <a href="<?php echo esc_url($url); ?>" data-caption="Foto: <?php echo esc_attr($name); ?>">
-                          <img style="top: 1.7em" src="<?php echo esc_url($square); ?>" alt="<?php echo esc_attr($name); ?>">
-                        </a>
-                        <?php
-                      } else { ?>
-                        <img class="frames__question" src="<?php echo esc_url(get_theme_file_uri('/images/vraagteken--300.png')); ?>" alt="">
-                      <?php } ?>
-
-                    </div>
-                  <div class="frames__credit"><span>Foto:</span> <?php echo $name; ?></div>
-
-                  <?php if($text) { ?>
-                    <div class="frames__img-comment">
-                      <?php echo $text; ?>
-                    </div>
-                  <?php } ?>
-                </div>
-              </div>
-            </div>
-            <?php endwhile; // have_rows('week_beeld') ?>
+            <?php while(have_rows('week_beeld_6')): the_row(); 
+              frames_item();
+            endwhile; ?>
           </div>
+        <?php endif; ?>
 
-        <?php endif; // have_rows('week_beeld') ?>
+        <?php if(have_rows('week_beeld_5')): ?>
+          <h3>Week 2</h3>
+          <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
+            <?php while(have_rows('week_beeld_5')): the_row(); 
+              frames_item();
+            endwhile; ?>
+          </div>
+        <?php endif; ?>
+
+        <?php if(have_rows('week_beeld_4')): ?>
+          <h3>Week 2</h3>
+          <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
+            <?php while(have_rows('week_beeld_4')): the_row(); 
+              frames_item();
+            endwhile; ?>
+          </div>
+        <?php endif; ?>
+
+        <?php if(have_rows('week_beeld_3')): ?>
+          <h3>Week 2</h3>
+          <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
+            <?php while(have_rows('week_beeld_3')): the_row(); 
+              frames_item();
+            endwhile; ?>
+          </div>
+        <?php endif; ?>
+
+        <?php if(have_rows('week_beeld_2')): ?>
+          <h3>Week 2</h3>
+          <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
+            <?php while(have_rows('week_beeld_2')): the_row(); 
+              frames_item();
+            endwhile; ?>
+          </div>
+        <?php endif; ?>
+
+        <?php if(have_rows('week_beeld')): ?>
+          <h3>Week 1</h3>
+          <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
+            <?php while(have_rows('week_beeld')): the_row();
+              frames_item();
+            endwhile; ?>
+          </div>
+        <?php endif; ?>
         
       </div>
 

@@ -76,7 +76,7 @@
   <div class="uk-container uk-flex uk-flex-right uitleg__top">
     <a class="uitleg__close" href="#" uk-icon="close"></a>
   </div>
-  <div class="uk-container">
+  <div class="uk-container uk-container-small">
     <?php uitleg_jury(); ?>
   </div>
 </div>
