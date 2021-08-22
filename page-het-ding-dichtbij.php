@@ -19,7 +19,7 @@
         <h4 class="page__subtitle"><span>Maak het beste beeld</span></h4>
 
         <?php if(have_rows('week_beeld_6')): ?>
-          <h3>Week 2</h3>
+          <h3>Week 6</h3>
           <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
             <?php while(have_rows('week_beeld_6')): the_row(); 
               frames_item();
@@ -28,7 +28,7 @@
         <?php endif; ?>
 
         <?php if(have_rows('week_beeld_5')): ?>
-          <h3>Week 2</h3>
+          <h3>Week 5</h3>
           <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
             <?php while(have_rows('week_beeld_5')): the_row(); 
               frames_item();
@@ -37,7 +37,7 @@
         <?php endif; ?>
 
         <?php if(have_rows('week_beeld_4')): ?>
-          <h3>Week 2</h3>
+          <h3>Week 4</h3>
           <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
             <?php while(have_rows('week_beeld_4')): the_row(); 
               frames_item();
@@ -46,7 +46,7 @@
         <?php endif; ?>
 
         <?php if(have_rows('week_beeld_3')): ?>
-          <h3>Week 2</h3>
+          <h3>Week 3</h3>
           <div class="uk-grid-collapse uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-6@l frames" uk-grid="masonry: true">
             <?php while(have_rows('week_beeld_3')): the_row(); 
               frames_item();
