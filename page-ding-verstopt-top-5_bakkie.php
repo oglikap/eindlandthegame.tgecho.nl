@@ -39,10 +39,7 @@
             </div>
           </div>
         <?php endwhile; // photos_verstopt ?>
-        
-        <div>
-        
-         </div>     
+           
         </div>
 
         <?php if(have_rows('score_week_5')): ?>
