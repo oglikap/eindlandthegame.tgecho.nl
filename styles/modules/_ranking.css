@@ -1,7 +1,7 @@
 .ranking {
   &__container {
     background-color: #f7f7f7;
-    padding: 0.5em;
+    padding: 0.5em 0;
     border-radius: 1px;
   }
 
