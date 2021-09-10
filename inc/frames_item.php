@@ -26,8 +26,8 @@
         <div class="frames__img-comment">
           <?php echo $text; ?>
         </div>
-      <?php } ?>
+        <?php } ?>
+      </div>
     </div>
   </div>
-</div>
 <?php } ?>
